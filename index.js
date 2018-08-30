@@ -51,7 +51,18 @@ function displayCurrentWeather(weatherJson) {
   // render current weather data to the DOM using provided IDs and json from API
   console.log("== displayCurrentWeather ==");
   console.log("weatherJson:", weatherJson)
-  console.log("weatherJson.name:", weatherJson.name)
+  console.log("weatherJson.main.temp:", weatherJson.main.temp)
+
+
+  // <td id="temp">
+  // <td id="low">
+  // <td id="high">
+  // <td id="humidity">
+  // <td id="cloudCover">
+  // <td id="sunrise">
+  // <td id="sunset">
+
+
 }
 
 function fetchFiveDayForecast(city) {
