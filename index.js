@@ -51,7 +51,8 @@ function displayCurrentWeather(weatherJson) {
   // render current weather data to the DOM using provided IDs and json from API
   console.log("== displayCurrentWeather ==");
   console.log("weatherJson:", weatherJson)
-  // 
+  console.log("weatherJson.main.temp:", weatherJson.main.temp)
+  //
 
   // <td id="temp"> main.temp
   let temperature = document.getElementById("temp").value;
@@ -64,7 +65,7 @@ function displayCurrentWeather(weatherJson) {
   // <td id="high"> main.temp_max
   let high = document.getElementById("high").value;
   console.log("high:", high);
-  high.innerText = weatherJson.main.temp_max;  
+  high.innerText = weatherJson.main.temp_max;
   // <td id="humidity"> main.humidity
   let humidity = document.getElementById("humidity").value;
   console.log("humidity:", humidity);
