@@ -55,9 +55,8 @@ function displayCurrentWeather(weatherJson) {
   //
 
   // <td id="temp"> main.temp
-  let temperature = document.getElementById("temp");
+  document.getElementById("temp").innerText = weatherJson.main.temp;
   console.log("temperature:", temperature);
-  temp.innerText = weatherJson.main.temp;
   // <td id="low"> main.temp_min
   let lowTemp = document.getElementById("low");
   console.log("low:", low);
