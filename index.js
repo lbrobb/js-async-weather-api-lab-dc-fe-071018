@@ -58,23 +58,17 @@ function displayCurrentWeather(weatherJson) {
   document.getElementById("temp").innerText = weatherJson.main.temp;
   console.log("temp:", temp);
   // <td id="low"> main.temp_min
-  let lowTemp = document.getElementById("low");
+  document.getElementById("low") = weatherJson.main.temp_min;
   console.log("low:", low);
-  low.innerText = weatherJson.main.temp_min;
   // <td id="high"> main.temp_max
-  let highTemp = document.getElementById("high");
+  document.getElementById("high") = weatherJson.main.temp_max;
   console.log("high:", high);
-  high.innerText = weatherJson.main.temp_max;
   // <td id="humidity"> main.humidity
-  let humidityCity = document.getElementById("humidity");
+  document.getElementById("humidity").innerText = weatherJson.main.humidity;
   console.log("humidity:", humidity);
-  humidity.innerText = weatherJson.main.humidity;
   // <td id="cloudCover"> clouds.all
-  let cloudCoverCity = document.getElementById("cloudCover");
-  console.log("cloudCover:", cloudCover);
-  cloudCover.innerText = weatherJson.clouds.all;
-
-
+  document.getElementById("cloudCover").innerText = weatherJson.clouds.all;
+  console.log("cloudCover:", cloudCover)
 }
 
 function fetchFiveDayForecast(city) {
