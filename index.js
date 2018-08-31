@@ -59,11 +59,11 @@ function displayCurrentWeather(weatherJson) {
   console.log("temperature:", temperature);
   temp.innerText = weatherJson.main.temp;
   // <td id="low"> main.temp_min
-  let low = document.getElementById("low").value;
+  let lowTemp = document.getElementById("low").value;
   console.log("low:", low);
-  temp_min.innerText = weatherJson.main.temp_min;
+  low.innerText = weatherJson.main.temp_min;
   // <td id="high"> main.temp_max
-  let high = document.getElementById("high").value;
+  let highTemp = document.getElementById("high").value;
   console.log("high:", high);
   high.innerText = weatherJson.main.temp_max;
   // <td id="humidity"> main.humidity
