@@ -67,11 +67,11 @@ function displayCurrentWeather(weatherJson) {
   console.log("high:", high);
   high.innerText = weatherJson.main.temp_max;
   // <td id="humidity"> main.humidity
-  let humidity = document.getElementById("humidity").value;
+  let humidityCity = document.getElementById("humidity").value;
   console.log("humidity:", humidity);
   humidity.innerText = weatherJson.main.humidity;
   // <td id="cloudCover"> clouds.all
-  let cloudCover = document.getElementById("cloudCover").value;
+  let cloudCoverCity = document.getElementById("cloudCover").value;
   console.log("cloudCover:", cloudCover);
   cloudCover.innerText = weatherJson.clouds.all;
 
