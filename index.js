@@ -51,16 +51,28 @@ function displayCurrentWeather(weatherJson) {
   // render current weather data to the DOM using provided IDs and json from API
   console.log("== displayCurrentWeather ==");
   console.log("weatherJson:", weatherJson)
-  console.log("weatherJson.main.temp:", weatherJson.main.temp)
+  // 
 
-
-  // <td id="temp">
-  // <td id="low">
-  // <td id="high">
-  // <td id="humidity">
-  // <td id="cloudCover">
-  // <td id="sunrise">
-  // <td id="sunset">
+  // <td id="temp"> main.temp
+  let temperature = document.getElementById("temp").value;
+  console.log("temperature:", temperature);
+  temperature.innerText = weatherJson.main.temp;
+  // <td id="low"> main.temp_min
+  let low = document.getElementById("low").value;
+  console.log("low:", low);
+  low.innerText = weatherJson.main.temp_min;
+  // <td id="high"> main.temp_max
+  let high = document.getElementById("high").value;
+  console.log("high:", high);
+  high.innerText = weatherJson.main.temp_max;  
+  // <td id="humidity"> main.humidity
+  let humidity = document.getElementById("humidity").value;
+  console.log("humidity:", humidity);
+  humidity.innerText = weatherJson.main.humidity;
+  // <td id="cloudCover"> clouds.all
+  let cloudCover = document.getElementById("cloudCover").value;
+  console.log("cloudCover:", cloudCover);
+  cloudCover.innerText = weatherJson.clouds.all;
 
 
 }
