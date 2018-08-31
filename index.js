@@ -55,23 +55,23 @@ function displayCurrentWeather(weatherJson) {
   //
 
   // <td id="temp"> main.temp
-  let temperature = document.getElementById("temp").value;
+  let temperature = document.getElementById("temp");
   console.log("temperature:", temperature);
   temp.innerText = weatherJson.main.temp;
   // <td id="low"> main.temp_min
-  let lowTemp = document.getElementById("low").value;
+  let lowTemp = document.getElementById("low");
   console.log("low:", low);
   low.innerText = weatherJson.main.temp_min;
   // <td id="high"> main.temp_max
-  let highTemp = document.getElementById("high").value;
+  let highTemp = document.getElementById("high");
   console.log("high:", high);
   high.innerText = weatherJson.main.temp_max;
   // <td id="humidity"> main.humidity
-  let humidityCity = document.getElementById("humidity").value;
+  let humidityCity = document.getElementById("humidity");
   console.log("humidity:", humidity);
   humidity.innerText = weatherJson.main.humidity;
   // <td id="cloudCover"> clouds.all
-  let cloudCoverCity = document.getElementById("cloudCover").value;
+  let cloudCoverCity = document.getElementById("cloudCover");
   console.log("cloudCover:", cloudCover);
   cloudCover.innerText = weatherJson.clouds.all;
 
